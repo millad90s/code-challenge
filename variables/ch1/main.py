@@ -1,7 +1,6 @@
-continues = 'y'
-while continues=='y':
-    continues = input('Do you continue?(y/n)')
-    num=input('Insert an integer: ')
+num=1
+while num!=0:
+    num=input('Insert an integer:(for Exit insert 0) ')
     # Check input value 
     if num.isdigit():
         num=int(num)

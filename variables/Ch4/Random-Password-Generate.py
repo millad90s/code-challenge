@@ -20,6 +20,11 @@ for n in range(num_number):
 # Generate 5 letter for password
 for n in range(num_letter):
     password+=random.choice(letter)
+# Create Random password from 3 type chars
+random.shuffle(list(password))
+
+print('Your password Generate: ',password)
+
 
 
 

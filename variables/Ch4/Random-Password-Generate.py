@@ -10,7 +10,16 @@ num_symbol = 1
 num_number = 2
 num_letter = 5
 
-
+password=""
+# Generate 1 symbol for password
+for n in range(num_symbol):
+    password+=random.choice(symbol)
+# Generate 2 number for password
+for n in range(num_number):
+    password+=random.choice(number)
+# Generate 5 letter for password
+for n in range(num_letter):
+    password+=random.choice(letter)
 
 
 

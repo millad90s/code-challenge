@@ -15,4 +15,12 @@ student = {}  # for use dictionary for list
 for i in range(names_student):
     name_student=input('Insert student name: ')
     student.setdefault(name_student,{})
+
+    for j in range(scores_student):
+        lesson_score = input('Lesson name: ')
+        student[name_student].setdefault(lesson_score,0)
+        student[name_student][lesson_score]=int(input('What a score? '))
+
+print(student)
+
     

@@ -10,3 +10,9 @@ names_student = int(input('How many need do you names for student : '))
 scores_student = int(input('How many need do you score for student : '))
 
 student = {}  # for use dictionary for list
+
+""" Running two nested loops to get its names, lessons and grades  """
+for i in range(names_student):
+    name_student=input('Insert student name: ')
+    student.setdefault(name_student,{})
+    

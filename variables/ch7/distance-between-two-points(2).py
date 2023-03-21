@@ -3,6 +3,8 @@ import math
 def check_float(f_number):
     if all(c.isdigit() or c == '.' for c in f_number) and f_number.count('.') ==1:
         return True
+    elif f_number.isnumeric():
+        return True
     else:
         return False
     

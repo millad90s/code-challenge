@@ -10,13 +10,10 @@ y1 = input('The width of the first point (y1) = ')
 x2 = input('The length of the seccond point (x2) = ')
 y2 = input('The width of the seccond point (y2) = ')
 
-# Check values to numeric values 
-if x1.isnumeric():
 
-    # Define two point from their Coordinates 
+if x1.isnumeric() and y1.isnumeric() and x2.isnumeric() and y2.isnumeric():
     p = [float(x1), float(y1)]
     q = [float(x2), float(y2)]
-    # Use the dist method to calculate the distance between two points and print them
     print(math.dist(p, q))
 else:
     print('You must insert numeris value')

@@ -3,8 +3,8 @@
     and calculate the average grade for the class.'''
 import pprint
 # Function Average Number 
-def avg_num(*num):
-    return sum(num)/len(num)
+def avreage_num(num_list:list):
+    return sum(num_list)/len(num_list)
 
 """ Getting the number of names and the number of lessons  """
 names_student = int(input('How many need do you names for student : '))

@@ -1,6 +1,7 @@
 '''Gradebook: 
     Create a gradebook for a class using variables to store the students' grades 
     and calculate the average grade for the class.'''
+import pprint
 # Function Average Number 
 def avg_num(*num):
     return sum(num)/len(num)
@@ -21,6 +22,6 @@ for i in range(names_student):
         student[name_student].setdefault(lesson_score,0)
         student[name_student][lesson_score]=int(input('What a score? '))
 
-print(student)
+pprint.pprint(student)
 
     

@@ -15,15 +15,17 @@ student = {}  # for use dictionary for list
 """ Running two nested loops to get its names, lessons and grades  """
 for i in range(names_student):
     name_student=input('Insert student name: ')
-    student.setdefault(name_student,{})
-    num=[]
+    student.setdefault(name_student,{}) # Set scores by empty
+    num=[] # Create new list for calculating scores average 
 
     for j in range(scores_student):
-        lesson_score = input('Lesson name: ')
-        student[name_student].setdefault(lesson_score,0)
-        student[name_student][lesson_score]=int(input('What a score? '))
+        lesson_score = input('Lesson name: ') # Get lessons score from user
+        student[name_student].setdefault(lesson_score,0) # Set scores by zero number
+        student[name_student][lesson_score]=int(input('What a score? ')) # Set scores by user
 
-        num.append(student[name_student][lesson_score])
+        num.append(student[name_student][lesson_score]) # Add member to new list for calculating average in next step 
+    
+    student[name_student].setdefault('Average',avreage_num(num)) # Calculate average score and set to dic
 
 pprint.pprint(student)
 

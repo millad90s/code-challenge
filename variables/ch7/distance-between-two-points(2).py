@@ -5,6 +5,8 @@ def check_float(f_number):
         return True
     elif f_number.isnumeric():
         return True
+    elif any(c.isnumeric() for c in f_number):
+        return True
     else:
         return False
     

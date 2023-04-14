@@ -1,3 +1,28 @@
+Project Definition:
+
+* I am planning to start a serious project to develop a Python service in command line or argument-based form that can perform various tasks. For now, I have considered 4 methods or capabilities for this service, including 2 simple methods and 2 relatively challenging ones. You can use various argument packages such as argparse to write this service.
+
+Methods:
+
+* The first task that this service should perform is to take a list of numbers and separate even and odd numbers and return the output as two separate lists, one for even numbers and one for odd numbers. The option for this Python service is -l or --list.
+
+* The second method of this service is to take a string as input and perform certain specified changes on this string, and return the edited input as output. The option for this method is -s or --string.
+
+* The third method is to obtain the public IP and internal IP of the system and the network on which this service is running and return them as output. The option for this method is -i or --ip.
+
+* The fourth method, which is the most challenging method, is to take an email as input, select the desired social network in the option to display, and check whether this email has an active account on this social network or not. The option for this method is -e or --email.
+
+Requirements:
+
+* All methods should be written in separate files, and the main code should be placed in the main file, and the service should be executed through running the main code.
+
+* All packages should be listed separately in the requirement file.
+
+* The code should be executed in a virtual environment, by creating an environment for Python version 9 or 10 (preferably 9), and after installing the required packages, the code should be executed properly.
+
+* The service should have a complete option of -h or --help in such a way that by running python main --help, all options and their guidance can be seen in detail.
+
+##############3
 #تعریف پروژه:
 
 پروژه ای که برای شروع کار جدی در نظر کرفتم یه سرویس پایتونی به صورت command line  یا آرگومان بیس بوده و قرا است کارهای مخلفی انجام دهد.فعلا ۴ متود یا ۴ قابلیت برای این سرویس در نظر گرفتم که تو تا متود ساده و ۲ تا متود تقریبا چالشی.برای نوشتن این سرویس می توانید از پکیج های مختلف آرگومان بیس به عنوان مثال argpars استفاده نمایید.

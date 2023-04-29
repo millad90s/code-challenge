@@ -4,6 +4,10 @@ import sys
 # Arguments give from command
 args = sys.argv[1:]
 
+if len(args) == 0:
+    print("For help use: python main.py -h")
+    sys.exit()
+
 # Create command for run to method1
 command = ["python3", "seprated-odd-even-number.py"] + args
 

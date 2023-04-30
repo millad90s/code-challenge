@@ -5,7 +5,7 @@
 
 def separate_odd_even_numbers(number_list):
     # Define list for even and odd
-    even_number = []git status
+    even_number = []
     odd_number = []
 
     if number_list is not None:

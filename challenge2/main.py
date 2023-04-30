@@ -1,18 +1,15 @@
-import subprocess
-import sys
+import argparse
+from seprated_odd_even_numbers import seprated_odd_even_numbers
 
-# Arguments give from command
-args = sys.argv[1:]
+def main():
+    # Arguments given from command
+    params = argparse.ArgumentParser(description='number derivation for even and odd')
+    params.add_argument('--list', '-l', nargs='+', type=int)
+    arguments = params.parse_args()
 
-if len(args) == 0:
-    print("For help use: python main.py -h")
-    sys.exit()
+    # Call function for separate odd and even numbers
+    seprated_odd_even_numbers(arguments.list)
 
-# Create command for run to method1
-command = ["python3", "seprated-odd-even-number.py"] + args
+if __name__ == '__main__':
+    main()
 
-# Process to run command
-result = subprocess.run(command, stdout=subprocess.PIPE)
-
-# Show result
-print(result.stdout.decode())

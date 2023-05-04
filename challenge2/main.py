@@ -6,8 +6,14 @@ from edit_string import edit_string
 
 def main():
     # Arguments given from command
-    params = argparse.ArgumentParser(description='number derivation for even and odd',
-                                     usage='%(prog)s -l [Numbers list]', formatter_class=argparse.RawTextHelpFormatter)
+
+    params = argparse.ArgumentParser(
+        description='A program for separating even and odd numbers or editing input strings.',
+        epilog='Examples:\n\n'
+               'Separate even and odd numbers: %(prog)s -l 1 2 3 4 5\n'
+               'Edit input strings: %(prog)s -s hello world',
+        usage='%(prog)s [options]',
+        formatter_class=argparse.RawTextHelpFormatter)
 
     # Add argument for list
     params.add_argument('--list', '-l', nargs='+', type=int,
@@ -33,8 +39,7 @@ def main():
         separate_odd_even_numbers(arguments.list)
 
     elif arguments.string:
-        edited_strs = edit_string(arguments.string)
-        print(edited_strs)
+        edit_string(arguments.string)
 
     else:
         print("Error: no argument provided!")

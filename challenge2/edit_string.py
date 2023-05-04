@@ -10,4 +10,6 @@ def edit_string(input_strings):
     for i in input_strings:
         string_tmp = i.upper()
         edited_strings.append(string_tmp)
-    return edited_strings
+    print("Upper: ",edited_strings)
+
+
